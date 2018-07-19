@@ -6,12 +6,22 @@
   <body>
 
     <a-scene>
-      <a-box position="-1 1 -3" rotation="45 45 45" color="#4CC3D9"></a-box>
-      <a-torus-knot position="0 2.5 -5"radius-inner="1" radius-outer="2" color="yellow"></a-torus-knot>
-      <a-plane position="0 0 -3.5" rotation="-90 0 0" width="4" height="2" src="" "></a-plane>
+      <a-box position="-1 1 -3" rotation="0 0 0" color="#4CC3D9"></a-box>
+      <a-torus-knot position="0 2.5 -5" radius-inner="1" radius-outer="2" color="yellow"></a-torus-knot>
       <a-cylinder position="1 0.75 -3" radius="0.25" height="1" color="#F88"></a-cylinder>
      <a-sky src="121699.jpg"></a-sky>
-    </a-scene>
+     
+      <a-assets>
+        <img src="https://cdn.glitch.com/b870d9ec-1139-44f9-b462-223e4a2c74e7%2Fcone.jpg?1490308535937" id="cookie">
+      </a-assets>
+      
+      <a-cylinder material="src: #cookie" segments-radial="3" position="0 0 -3" rotation="-90 60 0" scale="1 0.2 1"></a-cylinder>
+      
+      <a-assets src="https://clara.io/embed/e5fb057b-8c6c-487e-8000-2c278c5cf4f0?renderer=webgl" id="death"></a-assets>
+      
+      <a-cylinder material="src: #death" segments-radial="4" position="0 0 -10" rotation="0 0 0" scale="1 0.5 1"></a-cylinder>
+      
+   </a-scene>
 
   </body>
 
